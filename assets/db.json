@@ -1,0 +1,25 @@
+{
+  "alumnos": [
+    {
+      "id": "f8a4",
+      "nombre": "Ariely ",
+      "apellido": "Yuca Melon",
+      "dni": "123123123123123",
+      "grado": "1"
+    },
+    {
+      "id": "7a9f",
+      "nombre": "Nicolas Flamel",
+      "apellido": "Puerto Figueroa",
+      "dni": "123141241231231",
+      "grado": "3"
+    },
+    {
+      "nombre": "aaaa",
+      "apellido": "Yuca Melon",
+      "dni": "1213125214465",
+      "grado": "12",
+      "id": "ba0d"
+    }
+  ]
+}

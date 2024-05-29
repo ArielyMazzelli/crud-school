@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icon-lapiz-head.png">
+    <title>GDI</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h1 class="title">Gestion de Informacion</h1>
+        </div>
+    </header>
+
+    <div class="grid-container">
+        <table class="data-grid">
+            <caption class="title-grid">Alumnos Matriculados</caption>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>DNI</th>
+                    <th>Grado</th>
+                </tr>
+            </thead>
+            <tbody class="tbody">
+            </tbody>
+        </table>
+    </div>
+    <div class="div-btn"><button id="openModalBtn">Agregar</button></div>
+
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="closeBtn">&times;</span>
+            <h2 class="change-title">Agregar Matricula Nueva</h2>
+            <form id="dataForm">
+                <label for="name">Nombre:</label>
+                <input class="input" type="text" id="name" name="name" required>
+                <label for="lastName">Apellido:</label>
+                <input class="input" type="text" id="lastName" name="lastName" required>
+                <label for="DNI">DNI:</label>
+                <input class="input" type="number" id="dni" name="DNI" required>
+                <label for="grade">Grado:</label>
+                <input class="input" type="number" id="grade" name="grade" required>
+                <input class="input-submit" type="submit" value="Enviar">
+                <input type="hidden" name="id">
+            </form>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
